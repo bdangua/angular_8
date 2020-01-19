@@ -1,0 +1,297 @@
+1) Generate the Components
+
+    => IndexComponent
+
+    => PageoneComponent
+
+    => PagetwoComponent
+
+    => PagethreeComponent
+
+    where IndexComponent Component is the Main Component in Single Page Application
+
+    where PageoneComponent,PagetwoComponent and PagethreeComponent are Target Components in Single Page Application
+
+    we will Generate Components by using following Command.
+
+    > ng g c components/index --skipTests -is --selector=index --flat true
+
+    > ng g c components/pageone --skipTests -is --selector=pageone --flat true
+
+    > ng g c components/pagetwo --skipTests -is --selector=pagetwo --flat true
+
+    > ng g c components/pagethree --skipTests -is --selector=pagethree --flat true
+
+2) implement the business logic in target components
+
+
+3) create the hyperlinks in main template
+
+
+4) implement the routing
+
+    - we will implement routing by using "Routes" class.
+
+
+*******************************
+spaDemo1
+      src
+        app
+          routes
+            app.routes.ts
+*******************************
+
+5) load Routes in framework with the help of Registration file
+
+app.module.ts
+
+implementation of Nested Routing (Child Routing)
+------------------------------------------------
+1) Generate the Components
+
+    => ChildoneComponent
+
+    => ChildtwoComponent
+
+    => ChildthreeComponent
+
+> ng g c components/childone --skipTests -is --selector=childone --flat true
+
+
+> ng g c components/childtwo --skipTests -is --selector=childtwo --flat true
+
+
+> ng g c components/childthree --skipTests -is --selector=childthree --flat true
+
+2) implement the business logic in target components
+
+3) implement the Routing   (Child Routing)
+
+app.routes.ts
+
+
+4) create the hyperlinks
+
+    => child_one      (pageone.component.html)
+
+    => child_two      (pagetwo.component.html)
+
+    => child_three    (pagethree.component.html)
+
+
+            **** Authentication Guards (Routing Guards) ****
+
+1) CanActivate
+
+    - this Authentication Guard used to "Authenticate" while entering
+      into Main Routes.
+
+2) CanDeactivate
+
+    - this Authentication Guard used to "Authenticate" while leaving main routes.
+
+3) CanActivateChild
+
+    - this Authenticate Guard used to "Authenticate" while entering into
+    Child Routes.
+
+[ Note : we will implement Authentication Guards by using Custom Services
+         in Angular]
+
+[ Note : "Injectable" is the predefined class used to implement the Custom Services in Angular ]
+
+
+Ex.
+---
+ we will apply "CanActivate" to only "PageoneComponent"
+
+ we will apply "CanDeactivate" to only "PagetwoComponent"
+
+ we will apply "CanActivateChild" to "ChildthreeComponent"
+
+********************************
+spaDemo1
+      src
+        app
+          guards
+            auth.guards.ts
+********************************
+
+
+                        **** Routing Parameters ****
+
+
+==> declare variables in Component
+Ex.
+    pageone.component.ts
+
+==> map the data in coresepong template
+
+    pageone.component.html
+
+==> map the data to routing file
+
+    app.routes.ts
+
+==> read the data in component by using ActivatedRoute
+
+    childone.component.ts
+  
+
+[Note : "useHash" property used to save the data on browser history
+
+        "useHash" property used to reduce the burden on server while saving the data on browser storage
+        
+        Ex.
+        
+            RouterModule.forRoot(appRoutes,{useHash:true})]
+
+
+                            **** Forms ****
+
+
+    - In Angular, we have two types of forms.
+
+            1) Model Driven Forms
+            2) Template Driven Forms
+
+    - "Model Driven Forms" also called as Reactive Forms.
+
+    - "Model Driven Forms" mainly works on Model in MVC Architecture.
+
+    - validations in "Model Driven Forms" are Eazy Compared to "Template Driven Forms"
+
+Download the BootStrap
+----------------------
+> yarn add bootstrap@3.3.6 --save
+
+
+*********************************
+mdfEx
+    src
+      app
+        app.component.html
+        app.component.ts
+*******************************
+
+
+                        **** Template Driven Forms ****
+
+    - Template Driven Forms are Deprecated Forms.
+
+    - Template Driven Forms mainly on Application "View".
+
+    - validations in Template Driven Forms are Difficult 
+      Compared to Model Driven Forms.
+
+> yarn add bootstrap@3.3.6 --save
+
+- we will configure bootstrap in angular.json file.
+
+*****************************
+tdfEx
+    src
+      app
+        app.component.ts
+        app.component.html
+
+        app.module.ts
+*****************************
+
+
+
+TDF                                                       MDF
+---------------------------------------------------------------------------
+
+Template Driven Forms                         Model Driven Forms
+
+mainly on Application "View"                  mainly on Application "Model"
+
+validations are Difficult                     validations are eazy
+
+present in "FormsModule"                      present in "ReactiveFormsModule"
+
+we will assign logical name to                we will assign logical name by
+form by using "ngForm" directive              using [formGroup] directive
+logical name should start with "#"
+
+we will create SubGroups by using             we will create SubGroups by using
+ngModelGroup directive                        formGroupName directive
+
+we will persist the data by using             we will persist the data by using
+ngModel directive.                            formControlName directive.
+
+performance is less                           shows the better performance.
+-----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!--
+<h1 *ngFor="let x of ['Hello_1',
+                      'Hello_2',
+                      'Hello_3',
+                      'Hello_4',
+                      'Hello_5']">
+    <span [ngStyle]="{'background-color':x=='Hello_1'?'green':'pink',
+                      'color':'red'}">{{x}}</span>      
+</h1>
+-->
+
+
+<!-- <h1 *ngIf="false">Hello</h1> -->
+
+<!-- <h1 *ngIf="false;else elseBlock">Hello_1</h1>
+<ng-template #elseBlock>
+  <h1>Hello_2</h1>
+</ng-template> -->
+
+<!-- <h1 *ngIf="false;then thenBlock;else elseBlock"></h1>
+<ng-template #thenBlock>
+  <h1>True</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h1>False</h1>
+</ng-template> -->
+
+<!--
+<input type="number" [(ngModel)]="my_number">
+<br><br>
+<div [ngSwitch]="my_number">
+    <div *ngSwitchCase="0" [ngStyle]="{'background-color':'green'}">{{my_number}}</div>
+    <div *ngSwitchCase="1" [ngStyle]="{'background-color':'red'}">{{my_number}}</div>
+    <div *ngSwitchCase="2" [ngStyle]="{'background-color':'blue'}">{{my_number}}</div>
+    <div *ngSwitchDefault [ngStyle]="{'background-color':'pink'}">{{my_number}}</div>
+</div>
+-->
+
+
+
+
+<!--
+<fieldset>
+    <legend>Login</legend>
+    <input type="text" [(ngModel)]="login_details.uname">
+    <br><br>
+    <input type="password" [(ngModel)]="login_details.upwd">
+    <br><br>
+    <button (click)="login()">Login</button>
+</fieldset>
+-->
+
+<h1>{{"hello" | uppercase}}</h1>
+<h1>{{"ANGULAR" | lowercase}}</h1>
+<h1>{{100 | currency}}</h1>
+<h1>{{100 | currency:"GBP"}}</h1>
+<h1>{{100 | currency:"EUR"}}</h1>
+<h1>{{todayData | date:'dd-MM-yy'}}</h1>
+<h1>{{obj | json}}</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

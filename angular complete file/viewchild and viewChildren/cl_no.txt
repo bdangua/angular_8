@@ -1,0 +1,29 @@
+ViewChild & ViewChildren
+------------------------
+    - Both ViewChild & ViewChildren Decorators are used to
+      Get the Reference of One Component to Another
+      Component.
+
+**************************************************
+ViewChildAndViewChildrenEx
+                         src
+                           app
+                             first.component.ts
+                             first.component.html
+
+                             second.component.ts
+                             second.component.html
+
+                             app.module.ts
+                           index.html
+****************************************************
+
+Note : we must get the Reference of "secondComponent" to
+       "firstComponent"
+
+ViewChildren
+------------
+  - if we have more than "one cccurance of target component",
+    only first occurance reflected by ViewChild.
+
+  - to overcome above problem we have ViewChildren.

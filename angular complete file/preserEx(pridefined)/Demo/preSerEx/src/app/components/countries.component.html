@@ -1,0 +1,45 @@
+<!--
+    initially we have JSON Array
+    "result" is the JSON Array
+
+    "result" array containes 250 JSON Objects
+    Each JSON Object containes following keys
+            @name
+            @capital
+            @region
+            @population
+            @flag
+-->
+<table border="1"
+       cellpadding="10px"
+       cellspacing="10px"
+       align="center">
+
+       <thead style="background-color: gray;">
+            <tr>
+                <th>SNO</th>
+                <th>Name</th>
+                <th>Capital</th>
+                <th>Region</th>
+                <th>Population</th>
+                <th>Flag</th>
+            </tr>
+       </thead>
+
+       <tbody>
+           <tr *ngFor="let x of result;let i = index">
+               <td>{{i+1}}</td>
+               <td>{{x.name}}</td>
+               <td>{{x.capital}}</td>
+               <td>{{x.region}}</td>
+               <td>{{x.population}}</td>
+               <td><img width="100px" height="50px" src="{{x.flag}}"></td>
+            </tr>
+       </tbody>
+
+</table>
+
+
+
+
+

@@ -1,0 +1,30 @@
+Http Post Request
+-----------------
+    - we can send "data to server" by using "http post" request.
+
+    URL : http://test-routes.herokuapp.com/test/uppercase
+
+    - above URL Representing "Http Post" Request.
+
+    - above URL carring the "JSON Object" to Server with following JSON Key
+            "message"
+
+******************************************
+postEx
+     src
+       app
+         urls
+            urls.ts
+         error
+            error.ts
+         services
+            uppercase.service.ts
+         components
+            uppercase.component.ts
+            uppercase.component.html
+         app.module.ts
+        index.html
+******************************************
+
+
+

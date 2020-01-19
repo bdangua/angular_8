@@ -1,0 +1,73 @@
+Series & Parallel Calls
+-----------------------
+    - Executing rest apis calls one by one called as Series Calls.
+
+Parallel Calls
+--------------
+    - Executing rest api calls independently called as Parallel Calls.
+    - to make Parallel calls we need following module.
+            "rxjs-compat"
+    - we will download above module by using "yarn" tool.
+
+    > yarn add rxjs-compat --save
+
+URL_1 : https://restcountries.eu/rest/v2/all
+
+URL_2 : https://www.w3schools.com/angular/customers.php
+
+**************************************************
+preSerEx
+      src
+        app
+          urls
+            urls.ts
+          error
+            err.ts
+          services
+             customers.service.ts
+             countries.service.ts
+          components
+              series.component.ts
+              series.component.html
+
+              parallel.component.ts
+              parallel.component.html
+          app.module.ts
+        index.html
+*****************************************************
+
+
+> ng g s services/customers --skipTests
+
+  - "g" stands for generate
+
+  - "s" stands for service
+
+  - "--skipTests" means skip the generation of unit test cases
+
+> ng g s services/countries --skipTests
+
+> ng g c components/series --skipTests -is --selector=series --flat true
+
+  - "g" stands for generate.
+
+  - "c" stands for component.
+
+  - "--skipTests" stands for skip the generation of unit test cases
+
+  - "-is" skip the generation of css files
+
+  - "--selector" used to assign the custom selector.
+
+  - "--flat true" used to execute the above command successfully.
+
+
+
+
+
+
+
+
+
+
+

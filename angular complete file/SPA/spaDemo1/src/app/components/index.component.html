@@ -1,0 +1,20 @@
+<!--
+    [routerLink] is the predefined directive in angular.
+
+    [routerLink] directive used to define the URL Patterns.
+
+    [routerLink] directive used to load the webpages without 
+    refreshing
+
+    <router-outlet> is the predefined directive in angular.
+
+    <router-outlet> directive behaves like place holder.
+
+    <router-outlet> directive used to hold the target templates in 
+    single page applications
+-->
+<a [routerLink]="['/page_one',111,'p_one',10000]" style="margin-right: 100px;"><b>Page_One</b></a>
+<a [routerLink]="['/page_two']" style="margin-right: 100px;"><b>Page_Two</b></a>
+<a [routerLink]="['/page_three',333,'p_three',30000]"><b>Page_Three</b></a>
+<br><br>
+<router-outlet></router-outlet>

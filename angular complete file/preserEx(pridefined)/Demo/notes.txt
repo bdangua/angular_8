@@ -1,0 +1,53 @@
+The Services Provided by angular framework called as Predefined Services.
+
+"HttpClient" is the Predefined Service.
+
+"HttpClient" used to make the rest api calls.
+
+"HttpClient" present in "HttpClientModule"
+
+we must register "HttpClientModule" in "imports" array (app.module.ts).
+
+"HttpErrorResponse" is the Predefined Service.
+
+"HttpErrorResponse" used to handle the "Errors" thrown by servers.
+
+"HttpClient","HttpClientModule", "HttpErrorResponse" 
+present in "@angular/common/http" package.
+
+Observable present in rxjs package.
+
+"rxjs" stands for reactive extension javascript.
+
+Observables sends the Packets (Stream of Data) in Sequence from Server to 
+Client.
+
+Ex.
+---
+
+***************************************
+preSerEx
+      src
+        app
+          services
+              countries.service.ts
+          components
+              countries.component.ts
+              countries.component.html
+          app.module.ts
+        index.html
+***************************************        
+
+
+
+
+
+
+
+
+
+
+
+
+
+

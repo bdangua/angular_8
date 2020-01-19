@@ -1,0 +1,50 @@
+uppercase
+---------
+    - it is used to convert the lowercase characters to
+      uppercase characters.
+
+lowercase
+---------
+    - it is used to convert the uppercase characters to
+      lowercase characters.
+
+titlecase
+---------
+    - it is used to create the camelcase words
+
+date
+----
+    - it is used to manipulate the date, accroding to
+      application requirement.
+
+json
+----
+    - it is used to convert the JSON Objects to JSON Strings
+
+currency
+--------
+    - it is used to append the currencies symbols to the numerical values.
+
+number
+------
+    - it is used to manipulate the numerical values.
+
+slice
+-----
+    - it is used to manipulate the arrays.
+
+percent
+-------
+    - it is used to convert the fractions to equalent percentages.
+
+async
+-----
+    - it is used to display the asynchronus data on view
+
+
+                    **** Custom Pipes ****
+
+    - creating our own pipe called as Custom Pipe.
+
+
+

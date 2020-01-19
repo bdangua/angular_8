@@ -1,0 +1,88 @@
+Example_2:
+
+	Consuming Rest API Calls
+
+	URL : https://api.github.com/users/hadley/repos
+
+	Structure of JSON
+	-----------------
+
+	=> initially we have JSON Array.
+
+	=> we will iterate JSON Array by using "*ngFor" directive.
+
+	=> JSON Array containes 30 JSON Objects.
+
+	=> Each JSON Object containes following keys
+		@id
+		@name
+
+	=> Each JSON Object containes one more json object
+		@owner
+
+	=> "owner" JSON Object containes following keys
+		@id
+		@type
+
+
+**********************************************
+preSerEx
+       src
+	 app
+	   urls
+	     urls.ts
+	   error
+	     err.ts
+           services
+	      github.service.ts
+	   components
+	      github.component.ts
+	      github.component.html
+	   app.module.ts
+	 index.html 
+***********************************************
+
+	- "urls.ts" file used to maintain all URL'S (Rest API's)
+
+	- "err.ts" file used to handle the errors
+
+	- "github.service.ts" used to create the custom service.
+
+	- "github.component.ts" used to create the component.
+
+	- "github.component.html" file acting as external template
+	   for component.
+
+	- "app.module.ts" file acting as registration file.
+
+	- "index.html" is the landing Template.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

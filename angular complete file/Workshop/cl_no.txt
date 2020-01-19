@@ -1,0 +1,515 @@
+1) Introduction to Angular
+
+2) Installation of Angular
+
+3) MVC in Angular
+
+4) Components in Angular
+
+5) Services
+
+6) Rest API Calls
+
+7) SPA (Single Page Applications)
+
+	Routing in Single Page Applications
+
+8) Forms with Validations
+
+9) Unit Test Cases (Karma with Jasmine)
+
+
+				**** Angular ****
+
+
+	- Angular is the open source platform given by google used to develop the web applications
+	  and mobile applications.
+
+	- in 2013, google released the Angular2.
+
+	- we will develop Angular2 Applications by using TypeScript.
+
+	- "TypeScript" is the programming language, developed by Microsoft.
+
+	- Angular2 mainly follows the MVC Design Pattern.
+
+		M - Model     (Variables)
+
+		V - View      (HTML,HTML5,CSS,CSS3,BootStrp,Angular Material,Python,Django)
+
+		C - Components  (Classes)
+
+	- The Current Version of Angular is "Angular9".
+
+
+Environmental Setup for Angular
+-------------------------------
+
+1) download and install NodeJS
+
+	- "NodeJS" is server side scripting language.
+
+	- "NodeJS" used to develop the servers.
+
+	- Angular Installation Depending on Node Server.
+
+
+website : https://nodejs.org/en/download/
+
+file    : node-v12.13.0-x64.msi
+
+
+2) download and install Git
+
+	- "Git" is the open source repository maintained by microsoft.
+
+	- "Git" repository containes so many open source libraries related to angular.
+
+website : https://git-scm.com/download/win
+
+file    : Git-2.24.0.2-64-bit.exe
+
+
+3) install yarn tool
+
+	- "yarn" is the tool provided by facebook.
+
+	- "yarn" tool used to download the libraries from Git.
+
+	- we will install "yarn" tool by using following command.
+
+	> npm install -g yarn@latest
+
+
+	- "npm" stands for node packaging manager.
+
+	- "npm" is the integrated tool of node js.
+
+	- "-g" stands for global installation.
+
+
+4) install Angular latest version
+
+	- we will install Angular latest version by using following command
+
+	> npm install -g @angular/cli@latest
+
+	- cli stands for command line interface.
+
+	- cli is the tool given by angular framework.
+
+	- cli tool used to build and execute the angular applications.
+
+
+
+5) link the "yarn" tool to "cli" tool
+
+	- we will link "yarn" tool to "cli" tool by using following command
+
+	> ng config -g cli.packageManager yarn
+
+
+6) download and install "VisualStudioCode" IDE.
+
+	- "VisualStudioCode" is the open source IDE Given by Microsoft.
+
+	- "VisualStudioCode" IDE Recomended for UI Applications Development
+
+
+		JavaScript
+
+		TypeScript
+
+		Angular
+
+		ReactJS
+
+		MEAN Stack
+
+		MERN Stack
+
+		----
+		----
+
+
+
+7) create the angular application
+
+	> ng new firstApp
+
+
+
+8) switch to angular application
+
+	> cd firstApp
+
+
+
+9) execute the angular application
+
+	> ng s -o
+
+		- "ng" stands for angular
+
+		- "s" stands for "serve"
+
+		- "-o" stands for open the default browser
+
+		- by default angular application running on port no.4200
+
+
+Directory Structure of Angular Application
+------------------------------------------
+
+1) e2e
+
+	- this directory used to deploy the end to end test cases
+
+2) node_modules
+
+	- this directory containes libraries
+
+	- these libraries helps to execute the angular applications.
+
+
+3) src/app
+
+	- this directory used to deploy the angular applications.
+
+		Ex.
+			Components
+
+			Services
+
+			SPA
+
+			Directives
+
+			----
+			----
+
+4) src/app/app.module.ts
+
+	-  "app.module.ts" file acting as registration file.
+
+	- after deploying our applications, we must register in "app.module.ts" file.
+
+	- angular framework will execute our applications based on registrations.
+
+
+
+
+5) index.html
+
+	- "angular" starts the execution from "index.html" file.
+
+	- "index.html" file we can call main template.
+
+	- main template internally invokes the "main.ts" file.
+
+	- "main.ts" file internally invokes the "app.module.ts" file.
+
+	- "app.module.ts" file containes our applications registrations.
+
+	- based on registrations only angular framework will execute our applications.
+
+
+6) angular.json
+
+	- this file representing the directory structure of angular application.
+
+	- this file used to configure the 3rd party technologies like
+
+		jQuery
+
+		BootStrap
+
+		ReactJS
+
+		VueJS
+
+		----
+		----
+		----
+
+
+7) package.json
+
+	- it is used to download the 3rd party libraries.
+
+	- all libraries downloads to "node_modules" folder.
+
+
+				***** Component *****
+
+	- Simple TypeScript class behaves like Component.
+
+	- we can create more than one component.
+
+	- we can provide communication Between One Component to Another Component.
+
+	- Angular Applications are Component Based Applications.
+
+**********************************
+firstApp
+
+      src
+
+	app
+
+	  first.component.ts
+	  first.component.html
+
+	  app.module.ts
+
+	index.html
+**********************************
+
+
+	=> initially we will create component by using "TypeScript" with selector
+
+		(first.component.ts)
+
+	=> we will call Component related data (variables & functions) in external template
+
+		(first.component.html)
+
+	=> we will register selector in main template
+
+		(index.html)
+
+		<first></first>
+
+	=> we will register component in registration file
+
+		(app.module.ts)
+
+
+				**** Services ****
+
+
+	- Services are used to share the common business logic to multiple components.
+
+	- we have two types of services.
+
+		Predefined Services
+
+		Custom Services
+
+	- The Services given by angular framework called as Predefined Services.
+
+	- The Services Developed by us based on Application Requirement called as Custom Services.
+
+
+				***** Custom Services *****
+
+	- Injectable is the predefined class, used to create the Custom Services.
+
+
+**************************************
+custSerEx
+
+       src
+	 app
+	   services
+	      db.service.ts
+
+	   components
+	      mongodb.component.ts
+	      mongodb.component.html
+
+	      mysql.component.ts
+	      mysql.component.html
+
+	   app.module.ts
+	index.html
+***************************************
+
+
+1) create the table in mysql database
+
+
+*************************************
+user  : root
+
+password   :  root
+
+database  : workshop
+
+host      :  localhost
+
+table     : login_details
+************************************
+
+2) download the following node modules
+
+	=> express
+
+	=> mysql
+
+	=> jwt-simple
+
+	=> body-parser
+
+	=> cors
+
+		- express module used to develop the rest apis in node server.
+
+		- mysql module used to connect to mysql database.
+
+		- jwt-simple module used to generate the tokens.
+
+		- body-parser module used to read the post parameters.
+
+		- cors module used to enable the CORS Policy.
+
+
+		> cd loginEx
+
+		> yarn add express mysql jwt-simple body-parser cors --save
+
+			automatically above modules will be downloads to "node_modules" folder.
+
+
+3) develop the rest api by using nodejs with the help of expressjs
+
+****************************
+loginEx
+     server
+	   server.js
+***************************	 
+
+
+4) start the node server
+
+	> cd loginEx
+
+	> cd server
+
+	> node server
+
+
+5) test the rest api by using Postman
+
+	=> http://localhost:8080/login
+
+
+6) download the bootstrap
+
+	> cd loginEx
+	> yarn add bootstrap@3.3.6 --save
+
+		- automatically bootstrap downloads to node_modules folder.
+
+		- we must configure bootstrap to angular.json file.
+
+		angular.json
+		------------
+		 "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+        ]
+
+7) develop the angular application
+
+********************************
+loginEx
+	src
+	 app
+	   services
+	   	 login.service.ts
+	   components
+	   	  login.component.ts
+		  login.component.html
+		app.module.ts
+	 index.html
+********************************	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

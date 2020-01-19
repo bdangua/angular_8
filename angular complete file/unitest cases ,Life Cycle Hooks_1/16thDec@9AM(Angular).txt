@@ -1,0 +1,136 @@
+1) Manual Testing
+
+2) Automation Testing
+
+	- Manual Testing is Deprecated.
+
+	- Now a days no project using Manual Testing.
+
+	- Automation Testing Divided into 3 Types.
+
+	1) Unit Testing
+
+	2) Integration Testing
+
+	3) End to End Testing (e2e Testing)
+
+	- Testing Particular functionalities with assumptions
+	  called as Unit Testing.
+
+	- "karma with jasmine" is the tool used to 
+	   write the unit test cases
+
+	- "ng test" used to execute the unit test cases.
+
+	- unit test cases should end with ".spec.ts" extension.
+
+
+
+Component Life Cycle Hooks
+--------------------------
+
+1) ngOnChanges()
+
+
+2) ngOnInit()
+
+
+3) ngDoCheck()
+
+
+4) ngAfterContentInit()
+
+
+5) ngAfterContentChecked()
+
+
+6) ngAfterViewInit()
+
+
+7) ngAfterViewChecked()
+
+
+8) ngOnDestroy()
+
+
+ngOnChanges()
+-------------
+
+	- ngOnChanges() will execute immidialtely 
+	  after constructor. 
+
+	- when ever change detected in "Input" Binding Properties
+	  immidiately this life cycle hook will be executed.
+
+
+Ex.
+	"Cart Application/Functionality" in "ECommerce" Application
+
+
+ngOnInit()
+----------
+
+	- "ngOnInit()" will execute immidately after "ngOnChanges()".
+
+***************************************
+constructor()
+
+ngOnChanges()
+
+ngOInit()
+***************************************
+
+	- ngOnInit() will execute "only once".
+
+	- Mainly we are placing "Business logic".
+
+		Ex.
+			Service Calls
+
+	- ngOnInit() called as "first life cycle hook".
+
+	- At booting of Angular Application automatically 
+	  constructor() will be executed.
+
+	- After Booting ngOnInit() will be executed.
+
+	- initilization logic (dependency injection) we will place
+	  into constructor.
+
+	- Main Business logic we will place in ngOnInit() then only
+	  Application performance will be incresed.
+
+
+
+ngDoCheck()
+-----------
+
+	ngDoCheck() life cycle hook will execute when ever change
+	detected in model.
+
+	model reflected with service calls.
+
+	we can't predict the service calls response.	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
