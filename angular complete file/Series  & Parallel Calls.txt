@@ -1,0 +1,108 @@
+		**** Series  & Parallel Calls ****
+
+
+URL_1 : https://restcountries.eu/rest/v2/all
+
+URL_2 : https://www.w3schools.com/angular/customers.php
+
+
+	- Executing the Service calls with dependencies
+	  between them called as Series calls.
+
+	- Executing the Service Calls without dependencies
+	  Between Them Called as Parallel Calls
+
+	- To make Parallel Calls we need following module
+		"rxjs-compat"
+
+	- we will download above module by using yarn tool
+		> yarn add rxjs-compat --save
+
+
+**********************************************
+preSer4
+     src
+       app
+	 urls
+	   urls.ts
+	 error
+	   errCallBack.ts
+	 services
+	    countries.service.ts
+	    customers.service.ts
+
+	 components
+	    series.component.ts
+	    series.component.html
+
+	    parallel.component.ts
+	    parallel.component.html
+	 app.module.ts
+       index.html
+**********************************************
+
+
+urls.ts
+-------
+const URLS:any = {
+
+	COUNTRIES : "https://restcountries.eu/rest/v2/all",
+	CUSTOMERS:"https://www.w3schools.com/
+  		   angular/customers.php"
+};
+export default URLS;
+
+errCallBack.ts
+--------------
+import { HttpErrorResponse } from "@angular/common/http";
+let errCallBack = (err:HttpErrorResponse):any=>{
+	if(err.error instanceof Error){
+	   console.log("client side error");
+	}else{
+	   console.log("server side error");
+	};
+};
+export default errCallBack;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+

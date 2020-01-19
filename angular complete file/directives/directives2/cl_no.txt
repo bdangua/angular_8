@@ -1,0 +1,53 @@
+[ngSwitch]
+----------
+    - this directive used to write the switch cases in angular applications
+
+Syntax
+------
+
+[ngSwitch] = "expression"
+
+*ngSwitchCase = "value1"
+            ----
+            ----
+            ----
+*ngSwitchCase = "value2"
+            ----
+            ----
+            ----
+*ngSwitchDefault
+            ----
+            ----
+            ----
+
+
+> yarn add bootstrap@3.3.6 --save
+
+
+angular.json
+------------
+
+styles:[
+    "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+    
+]
+
+
+(ngSubmit)
+----------
+    - this directive used to submit the form to component.
+
+
+[ngStyle]
+---------
+    - this directive used to apply the css to DOM Elements
+
+
+[ngClass]
+---------
+    - this directive used to apply the bootstrap to DOM Elements.
+
+
+
+

@@ -1,0 +1,73 @@
+Communication Between Components
+--------------------------------
+    - In Angular, we can create more than one Component.
+
+    - In Angular, we can provide Communication Between Components.
+
+    - we can provide Communication Between Components in 4 ways.
+
+            1) @Input()
+
+            2) @Output()
+
+            3) @ViewChild()
+
+            4) @ViewChildren()
+
+@Input()
+--------
+    - @Input() Decorator used to share the data from Parent Component
+      to Child Component.
+
+@Output()
+---------
+    - @Output() Decorator used to share the data from Child Component
+      to Parent Component.
+
+
+Steps to share the Data from Parent Component to Child Component
+-----------------------------------------------------------------
+
+1) create the child component with @Input() Decorator
+
+
+2) create the Parent Component with sharable data.
+
+
+3) map the Parent Component data to child component properties.
+
+[Note : in general we will use "parent.component.html" for mapping purpose]
+
+4) bootstrap the parent component
+
+
+Steps to share the data from Child Component to parent component
+----------------------------------------------------------------
+1) declare the @Output() Decorator in child component.
+
+
+2) fire the @Output() event
+
+
+3) map the event in "parent.component.html" file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

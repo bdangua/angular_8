@@ -1,0 +1,64 @@
+- if we load "bulk data" at booting time automatically booting time will be "incresed" and application performance will be "decresed".
+
+- so, we must load bulk data based on customer requirement (images)
+
+- loading bulk data based on customer demand called as lazy loading.
+
+
+1) generate the components
+
+    => indexComponent
+
+    => pageOneComponent
+
+2) create the countriesModule
+
+        => countries.service.ts
+
+        => countries.component.ts
+
+        => countries.component.html
+
+        => countries.module.ts
+
+        URL : https://restcountries.eu/rest/v2/all
+
+3) implement the CanLoad permission
+
+    - "CanLoad" acting as Routing Guard.        
+
+    - "CanLoad" used to give the permission to enter into modules.
+
+*************************
+src
+  app
+    auth.guard.ts
+*************************
+
+
+4) implement the main routing
+
+****************************
+src
+  app
+    app.routes.ts
+****************************
+
+
+5) execute the application 
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+

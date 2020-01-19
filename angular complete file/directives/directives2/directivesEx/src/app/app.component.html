@@ -1,0 +1,104 @@
+<!--
+<input type="number" [(ngModel)]="my_number">
+<br><br>
+<div [ngSwitch]="my_number">
+  <div *ngSwitchCase="1" class="btn btn-success">{{my_number}}</div>
+  <div *ngSwitchCase="2" class="btn btn-primary">{{my_number}}</div>
+  <div *ngSwitchCase="3" class="btn btn-danger">{{my_number}}</div>
+  <div *ngSwitchCase="4" class="btn btn-warning">{{my_number}}</div>
+  <div *ngSwitchDefault class="btn btn-default">{{my_number}}</div>
+</div>
+-->
+
+<!--
+<fieldset>
+    <legend>Login</legend>
+    <form (ngSubmit)="login(uname,upwd)">
+        <input type="text" 
+               name="uname"
+               [(ngModel)]="uname">
+        <br><br>
+        <input type="password"
+               name="upwd"
+               [(ngModel)]="upwd">
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+</fieldset>
+-->
+
+
+<!--
+<div [ngStyle]="{'background-color':'gray'}">Hello</div>
+<div [ngStyle]="{'background-color':my_number === 0?'green':'red'}">
+    Hello
+</div>
+<div *ngFor="let x of ['Hello_1',
+                       'Hello_2',
+                       'Hello_3',
+                       'Hello_4',
+                       'Hello_5']"
+      [ngStyle]="{'color':x==='Hello_1'?'red':'green',
+                  'color':x==='Hello_2'?'yellow':'green',
+                  'color':x==='Hello_3'?'pink':'green',
+                  'color':x==='Hello_4'?'grey':'green',
+                  'color':x==='Hello_5'?'blue':'green'}">
+        {{x}}
+</div>
+-->
+
+
+
+
+<h1 [ngClass]="{'text-success':true}">Hello</h1>
+<h1 [ngClass]="{'text-danger':my_number===0}">Hello</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

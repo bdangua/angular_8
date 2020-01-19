@@ -1,0 +1,25 @@
+Custom Structural Directives
+----------------------------
+    - we will represent Structural Directives with prefix as "*".
+
+    - Structural Directives adds/removes DOM Elements from browser memory based on requirement.
+
+    - Directive is the predefined class in angular, used to assign the logical name to Custom Directive.
+
+    - "TemplateRef" is the predefined class used to manipulate the DOM Elements in Structural Directives.
+
+    - "ViewContainerRef" is the predefined class, used to add/remove the DOM Elements from Browser memory.
+
+    - "Input" is the predefined class used to create the main function in Structural Directives.
+
+**************************************
+custDirEx
+        src
+          app
+            app.component.html
+
+            structural.directive.ts
+
+            app.module.ts
+          index.html
+**************************************

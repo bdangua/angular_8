@@ -1,0 +1,356 @@
+Angular Environmental Setup
+---------------------------
+
+1) download and install NodeJS
+
+	- "NodeJS" is the server side scripting language.
+
+	- "NodeJS" used to develop the servers.
+
+	- Angular Installation Depending on Node Server.
+
+
+website : https://nodejs.org/en/download/
+
+file    : node-v12.13.0-x64.msi
+
+
+
+2) download and install Git
+
+	- "Git" is the open source repository maintained by
+	  microsoft.
+
+	- "Git" repository containes so many open source libraries
+	  related to angular.
+
+
+website : https://git-scm.com/download/win
+
+file    : Git-2.24.0-64-bit.exe
+
+
+
+3) install yarn tool. 
+
+	- we will install yarn tool by Command Prompt.
+
+	- yarn tool given by facebook.
+
+	- yarn tool used to download the libraries.
+
+	- we will install yarn tool by using following command.
+
+
+> npm install -g yarn@latest
+
+	- "npm" stands for node packaging manager.
+
+	- "npm" is the inbuilt tool of node js.
+
+	- "-g" stands for global installation.
+
+	- current version of yarn tool is "1.19.1"
+
+
+
+4) install angular
+
+	- we will install angular by using command prompt.
+
+> npm install -g @angular/cli@latest
+
+	- "cli" stands for command line interface.
+
+	- "cli" is the tool given by angular framework
+
+	- "cli" tool used to build the angular applications.
+
+	- current version of "cli" is "8.3.17"
+
+
+
+5) link the "yarn" tool to "cli" tool
+
+	- we will link "yarn" tool to "cli" tool by using following
+	  command.
+
+
+	> ng config -g cli.packageManager yarn
+
+		- where "M" is capital
+
+
+6) create the angular application
+
+	> ng new firstApp
+
+		- where "firstApp" is the name of angular application.
+
+
+
+7) switch to angular application
+
+	> cd firstApp
+
+		- we can switch to angular application.
+
+
+8) execute the angular application
+
+	> ng s -o
+
+		- automatically we can execute angular application.
+
+		- "s" stands for serve
+
+		- "-o" stands for open the default browser.
+
+		- angular application deployed into "lite" server.
+
+		- "lite" is the webserver given by microsoft.
+
+		- "lite" server specially designed by microsoft to
+	          execute angular applications.
+
+		- by default "lite" server running on port no.4200
+
+
+while creating the angular application it will ask the 
+set of questions
+
+
+1) would you like to add angular routing (y/n) ?  n
+
+	please choose "n"
+
+
+2) choose the style sheet
+
+	> css
+
+	by default css will select.
+
+
+directory structure of angular application
+------------------------------------------
+
+1) e2e
+
+	- e2e stands for end to end.
+
+	- e2e directory used to write the end to end test cases to
+	  angular applications.
+
+
+	- in general testing divided into two types.
+
+		1) Manual Testing
+
+		2) Automation Testing
+
+	- Manual Testing is Deprecated, now a days no project using
+	  Manual Testing.
+
+	- Automation Testing divided into 3 Types.
+
+		1) Unit Testing
+
+		2) Integration Testing
+
+		3) End to End Testing
+
+	- Testing particular functionality with assumptions called as
+	  Unit Testing.
+
+	- Testing particulat functionalities with exact environment
+	  called as Integration Testing (Real Environment).
+
+	- Testing Particular functionality with "end to end scenarios 
+	  (production mode)" called as end to end testing.
+
+
+
+
+2) node_modules
+
+	- "node_modules" directory containes libraries.
+
+	- those libraries helps to execute the angular application.
+
+
+3) src/app
+
+	- this directory used to deploy the angular applications.
+
+	Ex.
+		Components
+
+		Directives
+
+		Services
+
+		Pipes
+
+		Modules
+
+		----
+		----
+		----
+
+
+4) src/app/app.module.ts
+
+
+	- this file we can call registration file.
+
+	- this file also called as Module file.
+
+	- this is the Default Module in Angular Application.
+
+	- this file used to register the angular applications.
+
+	- once if we register, then only angular applications will
+	  be executed by angular framework
+
+
+
+5) src/assets
+
+	- this directory used to deploy the static resources
+
+	Ex.
+	   images
+	   multimedia files
+	   xml files
+	   json files
+	   ---
+	   ---
+	   ---
+
+
+6) environments
+	
+	- in general we have 3 types of environments
+
+		1) development environment
+
+		2) production environment
+
+		3) testing environment
+
+	- what ever the required environment, we will configure
+	  in environments directory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

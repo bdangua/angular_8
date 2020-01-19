@@ -1,0 +1,118 @@
+<!--
+<h1 *ngFor="let x of [10,20,30,40,50];
+            let i = index;
+            let f = first;
+            let l = last;
+            let e = even;
+            let o = odd;">
+  {{x}}...{{i}}...{{f}}...{{l}}...{{e}}...{{o}}
+</h1>
+-->
+
+<!--
+<h1 *ngFor="let x of [10,20,30,40,50];let e=even">
+  <span *ngIf="e">
+    {{x}}
+  </span>
+</h1>
+
+
+<h1 *ngIf="true">
+  Hello
+</h1>
+
+<h1 *ngIf="false;else elseBlock">Hello_1</h1>
+<ng-template #elseBlock>
+  Hello_2
+</ng-template>
+
+<h1 *ngIf="true;then thenBlock;else elseBlock1"></h1>
+<ng-template #thenBlock>
+  Hello_1
+</ng-template>
+<ng-template #elseBlock1>
+  Hello_2
+</ng-template>
+-->
+
+
+<!-- <input type="text" [(ngModel)]="login_details.uname">
+<input type="password" [(ngModel)]="login_details.upwd">
+<button (click)="login()">Login</button> -->
+
+
+<!--
+<input type="text" #uname>
+<input type="password" #upwd>
+<button (click)="myFun(uname.value,upwd.value)">Login</button>
+-->
+
+
+
+<button class="glyphicon glyphicon-plus"
+        (dblclick)="count = count+1"></button>
+<button class="btn btn-success">{{count}}</button>
+<button class="glyphicon glyphicon-minus"
+        (dblclick)="count = count-1"></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

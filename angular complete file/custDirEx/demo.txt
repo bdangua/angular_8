@@ -1,0 +1,45 @@
+Custom Directives
+-----------------
+    - Creating our own Directives based on application requirement called as Custom Directives.
+
+    - we can create two types of Custom Directives.
+    
+    1) Attribute Type Custom Directives
+    2) Structural Type Custom Directives
+
+Attribute Type Custom Directives
+--------------------------------
+Ex.
+    <div myDir></div>
+        - where "myDir" is teh custom Directive.
+        - "myDir" behaves like Attribute for "div".
+
+    - "Directive" is the predefined class, used to assign the logical name to custom Directive.
+
+    - "myDir" is the logical name to custom Directive.
+
+    - "ElementRef" is the predefined class, used to manipulate the DOM.
+
+    - where "div" behaves like "DOM Element".
+
+    - "HostListener" is the predefined class, used to apply the mouse events.
+
+*******************************
+custDirEx
+       src
+         app
+           app.component.html
+
+           my.directive.ts
+
+           app.module.ts
+        index.html
+*******************************
+
+
+
+
+
+
+
+

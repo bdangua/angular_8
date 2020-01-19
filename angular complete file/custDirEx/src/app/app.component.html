@@ -1,0 +1,20 @@
+<h1
+[var_one]="color_one"
+[var_two]="color_two"
+myDir>Hello</h1>
+
+
+<h1
+[var_one]="color_one"
+[var_two]="color_two"
+myDir>Welcome</h1>
+
+<br><br>
+<input type="color" [(ngModel)]="color_one">
+<input type="color" [(ngModel)]="color_two">
+<!--
+    var_one & var_two both are dynamic properties
+    in general we will take dynamic properties with the help of @Input() decorator
+
+    where myDir is the attribute type custom directive
+-->

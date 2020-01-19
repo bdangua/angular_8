@@ -1,0 +1,33 @@
+ngAfterContentInit()
+--------------------
+    - when ever angular framework identifies the memory for component, then this life cycle hook will be executed.
+
+ngAfterContentChecked()
+-----------------------
+    - if framework reserved the memory for component
+      successfully, then this life cycle hook will be executed.
+
+ngAfterViewInit()
+-----------------
+    - if component loaded successfully in memory then this life cycle hook will be executed.
+
+    - mainly we are using this life cycle hook for datatype conversions.
+
+ngAfterViewChecked()
+--------------------
+    - if data populated successfully then this life cycle hook will be executed.
+
+ngOnDestroy()
+-------------
+    - it is used to perform the cleanup operations before killing the component by framework.
+
+    Ex.
+        unsubscribe the services
+        nullify the references
+            ---
+            ---
+            ---
+
+
+
+

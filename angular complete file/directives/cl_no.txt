@@ -1,0 +1,100 @@
+Predefined Directives
+---------------------
+
+1) *ngFor
+
+2) *ngIf
+
+3) (click)
+
+4) (dblclick)
+
+5) [ngSwitch]
+
+6) (ngSubmit)
+
+7) [ngStyle]
+
+8) [ngClass]
+
+9) [(ngModel)]
+
+
+*ngFor
+------
+	- This directive called as predefined directive.
+
+	- This directive also called as structural directive.
+
+	- This directive used to iterate the array of elements.
+
+
+Syntax.
+
+	*ngFor="let variable of array"
+
+
+
+*ngIf
+-----
+	this directive used to write the conditions in angular
+	applications
+
+
+
+(click)
+-------
+	- it is used to handle the click events
+
+
+(click)="expression" / 
+
+	"user defined function" / 
+	
+	"user defined function with arguments"
+
+
+(dblclick)
+----------
+	- it is used to handle the double click events in angular
+	  applications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+NodeJS
+------
+    - NodeJS is the server side scripting language.
+    - NodeJS used to develop the servers.
+            Http server
+            TCP server
+    - we will develop Node Applications by using JavaScript.
+    - we will start Node Server by using either "node" or "nodemon".
+    - "node" or "nodemon" are the tools provided by NodeJS.
+    - "nodemon" tool used to start the node server in watch mode (live mode).
+    - we will install "nodemon" tool by using following command.
+            > npm install -g nodemon@latest
+
+            - "npm" stands for node packaging manager.
+            - "npm" is the integrated tool of node js.
+            - "-g" stands for global installation.
+    - node supports modules
+
+    - predefined libraries called as modules.
+
+modules in NodeJS
+-----------------
+1) mysql
+    - this module used to connect to mysql database.
+
+2) mongodb
+    - this module used to connect to mongodb database.
+    - the stable version of mongodb module is 2.2.32.
+
+3) mssql
+    - mssql module used to connect to SQLServer.
+
+4) express
+    - express module used to develop the rest apis (webservices).
+
+5) body-parser
+    - this module used to read the post parameters sent by client
+      applications(Angular,ReactJS).
+
+6) cors
+    - this module used to enable the communication between different
+      ports.
+
+7) jwt-simple
+    - jwt stands for json web token.
+    - jwt-simple module used to generate the tokens.
+    - in general we will use these tokens for authentication purpose.
+    - this authentication system technically called as "token based
+      authentication system"
+
+
+8) multer
+    - this module used to upload the images to the server.
+
+
+9) socket.io
+    - this module used to develop the chat applications.
+
+
+
+- we will download above modules by using either "npm" or "yarn"
+
+- "npm" and  "yarn" both are automation tool used to download the node modules.
+
+- "yarn" is the advanced tool provided by facebook, used to download
+  the modules in faster manner.
+
+- we will install "yarn" tool by using following command.
+
+    > npm install -g yarn@latest
+
+- node modules downloads to "node_modules" folder in current path.
+
+- in general we will test rest api calls by using "Postman".
+
+- "Postman" is the software used to test the rest api calls.
+
+website : https://www.getpostman.com/downloads/
+Ex_1:
+    develop the rest apis by using Node Server.
+
+
+Step 1:
+    create the directory   (folder)
+
+    Ex.
+            RestAPI
+
+Step 2.
+    download express module
+
+    > yarn add express --save
+
+
+Step 3.
+    develop the rest api's by using NodeJS
+
+    Ex.
+        server.js
+
+Step 4.
+    Start the server
+
+    > nodemon server
+
+Step 5.
+    Test the following rest api's by using Postman
+
+    => http://localhost:8080/   (GET)
+
+    => http://localhost:8080/mongodb   (GET)
+
+    => http://localhost:8080/    (POST)
+
+    => http://localhost:8080/firebase   (POST)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

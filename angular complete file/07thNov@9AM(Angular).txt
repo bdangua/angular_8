@@ -1,0 +1,267 @@
+7) src/favicon.ico
+
+	- this is the default logo of angular.
+
+
+8) src/index.html
+
+	- angular starts the execution from "index.html" file.
+
+	- "index.html" file is the landing template.
+
+	- "index.html" file is the main template in angular application.
+
+	- main template internally invokes the "main.ts" file.
+
+	- "main.ts" file internally invokes the "app.module.ts" file.
+
+	- "app.module.ts" file containes our applications registrations.
+
+	- based on registrations our applications will be executed
+	  by angular framework.
+
+
+9) src/main.ts
+
+
+	- this file acting as interface between main template to
+	  registration file.
+
+	  (app.module.ts <==> index.html)
+
+
+10) src/polyfills.ts
+
+	- polyfills.ts file is the library.
+
+	- this library helps to execute the projects into
+	  different browsers.
+
+	Ex.
+		Chrome
+		Mozilla
+		IE
+		---
+		---
+		---
+
+
+11) src/styles.css
+
+	- we will define global styles here.
+
+	- what ever the styles we define here, automatically applicable
+	  to entire angular application.
+
+
+
+12) src/test.ts
+
+
+	- this file representing sample testing file.
+
+
+13) editorconfig & .gitignore
+
+	- these two files not related to angular applications.
+
+	- first file related to "VisualStudioCode" Configurations.
+
+	- second file related "Git" configurations.
+
+
+14) angular.json
+
+	- this file representing directory structure of angular
+	  application.
+
+	- we can customize directory structure based on application
+	  requirement by using angular.json file.
+
+	- this file used to configure the 3rd party technologies
+
+		=> jQuery
+		=> BootStrap
+		=> ReactJS
+		=> VueJS
+
+		    ---
+		    ---
+		    ---
+
+
+
+15) browserslist
+
+	- it will show supporting and non supporting browsers
+	  based on Angular9 version.
+
+
+
+16) karma.conf.js
+
+	- in general we will write unit test cases by using 
+	  "karma with jasmine" tool.
+
+	- "karma.conf.js" file representing the configuration file
+	  of karma tool
+
+
+17) package.json
+
+	- this file used to download the 3rd party libraries.
+
+	- all these libraries downloads to "node_modules" folder.
+
+
+18) tsconfig.app.json
+
+	- this file acting as controlling file for entire angular
+	  application.
+
+	- what ever the business logic written here, automatically
+	  applicable to entire angular application.
+
+	Ex.
+	    removing the white spaces in entire angular applications
+
+	    overcome the data redundancy in entire angular applications.
+
+
+19) tsconfig.json
+
+	- it contain TypeScript Configurations
+
+
+
+20) tsconfig.spec.json
+
+	- this file is the controlling file for all unit test cases
+	  present in angular project.
+
+
+
+21) tslint.json
+
+	- this file acting as validator file for angular applications.
+
+
+		   	***** Components *****
+
+	- Angular is the Framework.
+
+	- Angular Framework follows the MVC Design Pattern.
+
+		M - Model
+
+		V - View
+
+		C - Component
+
+	- Simple TypeScript class behaves like Component.
+
+	- We Can Create more than one component in angular applications.
+
+	- Angular Applications are component based applications.
+
+	- Because of Components Code Reusability is high in Angular
+	  Compared to AngularJS.
+
+	- Component acting as Interface Between View and Service
+	  in MVC Architecture.
+
+	- we can establish the communication between server to database
+	  by using modules.
+
+		Ex.
+			mysql
+			mssql
+			mongodb
+			firebase
+			oradb
+			mongoose
+			---
+			---
+			---
+
+	- we can provide communication between service to server
+	  by using AJAX Calls (Observables).
+
+	- we can establish communication between component to service
+	  by using dependency injection.
+
+	- the communication between view to component called as 
+	  two way data binding.
+
+
+*****************************************
+firstApp
+       src
+	 app
+	   first.component.ts
+	   first.component.html
+
+
+	   app.module.ts
+	 index.html
+*****************************************
+
+	- "first.component.ts" file used to create the component.
+
+	- "first.component.html" file used to display the component
+	  output.
+
+	- "first.component.html" also called as external template
+	  of component.
+
+	- in general we will register our applications (component)
+	  in app.module.ts file.
+
+	- index.html file is the main template.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
